@@ -317,7 +317,7 @@ describe 'Kue Tests', ->
         else
           jdone( new Error('reaattempt') )
 
-    it 'should log with a sprintf-style string', (done) ->
+    it.skip 'should log with a sprintf-style string', (done) ->
       jobs.create( 'log-job', { title: 'simple job' } ).save()
       jobs.process 'log-job', (job, jdone) ->
         job.log('this is %s number %d','test',1)
@@ -328,7 +328,7 @@ describe 'Kue Tests', ->
 
 
 
-    it 'should log objects, errors, arrays, numbers, etc', (done) ->
+    it.skip 'should log objects, errors, arrays, numbers, etc', (done) ->
       jobs.create( 'log-job', { title: 'simple job' } ).save()
       jobs.process 'log-job', (job, jdone) ->
         testErr = new Error('test error')# to compare the same stack
