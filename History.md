@@ -1,3 +1,8 @@
+0.13.0 / 2020-13-05
+===================
+
+* Update redis to 3.0.0
+
 0.11.5 / 2016-11-05
 ===================
 
@@ -45,7 +50,7 @@
 * Add parameter for testMode.enter to continue processing jobs, #821
 * Modern Node.js versions support, #812
 * Don't start the next job until the current one is totally finished, Closes #806
-* Store multiple instances of jobs in jobs id map to emit events for all, #750 
+* Store multiple instances of jobs in jobs id map to emit events for all, #750
 
 
 0.10.6 / 2016-04-27
@@ -81,7 +86,7 @@
 
 * Add support for ioredis, Closes #652
 * Add support for Redis Cluster, Closes #642
-* Fix `this.state` on refreshTTL 
+* Fix `this.state` on refreshTTL
 
 
 0.10.0 / 2015-11-20
@@ -234,7 +239,7 @@
 ==================
 
   * Fix typo in removeOnComplete
-  
+
 0.8.4 / 2014-08-08
 ==================
 
@@ -243,7 +248,7 @@
   * Implement `job.removeOnComplete`, closes #383
   * Make searchKeys chainable, closes #379
   * Add extra job options to JSON API, closes #378
-  
+
 0.8.3 / 2014-07-13
 ==================
 
